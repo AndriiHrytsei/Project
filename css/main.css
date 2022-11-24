@@ -27,4 +27,14 @@ a {
   background-size: cover;
   background-position: center;
   background-image: url(../../fon_section5.png);
+
+.about-food-item {
+  border: 1px solid;
+  height: 300px;
+}
+
+.about-us-item {
+  border: 1px solid;
+  height: 300px;
+
 }/*# sourceMappingURL=main.css.map */
