@@ -28,4 +28,13 @@ a {
 .about-us-item {
   border: 1px solid;
   height: 300px;
+}
+
+.section5 {
+  width: 1444px;
+  height: 845px;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../fon_section5.png);
 }/*# sourceMappingURL=main.css.map */
