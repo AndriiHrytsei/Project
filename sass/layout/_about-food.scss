@@ -1,4 +1,39 @@
+.about-food-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    @media screen and (min-width:768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 .about-food-item{
+    display: flex;
     border: 1px solid;
     height: 300px;
+    align-self: center;
+    flex-direction: column;
 }
+
+.about-food-item h2{
+    margin-bottom: 25px;
+}
+.about-food-item:first-child{
+    justify-content: center;
+}
+.about-food-item:nth-child(2){
+    justify-content: center;
+    align-items: flex-end;
+
+    @media screen and (min-width:768px) {
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+.about-food-item:nth-child(3){
+    justify-content: center;
+    @media screen and (min-width:768px) {
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+
