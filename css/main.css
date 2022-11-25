@@ -20,14 +20,99 @@ a {
   text-decoration: none;
 }
 
+.about-food-box {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 768px) {
+  .about-food-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .about-food-item {
+  display: flex;
   border: 1px solid;
   height: 300px;
+  align-self: center;
+  flex-direction: column;
+}
+
+.about-food-item h2 {
+  margin-bottom: 25px;
+}
+
+.about-food-item:first-child {
+  justify-content: center;
+}
+
+.about-food-item:nth-child(2) {
+  justify-content: center;
+  align-items: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .about-food-item:nth-child(2) {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.about-food-item:nth-child(3) {
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .about-food-item:nth-child(3) {
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.about-us-box {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 768px) {
+  .about-us-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .about-us-item {
+  display: flex;
   border: 1px solid;
   height: 300px;
+  align-self: center;
+  flex-direction: column;
+}
+
+.about-us-item h2 {
+  margin-bottom: 25px;
+}
+
+.about-us-item:first-child {
+  align-items: flex-end;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .about-us-item:first-child {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.about-us-item:nth-child(2) {
+  align-items: flex-start;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .about-us-item:nth-child(2) {
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.about-us-item:last-child {
+  justify-content: center;
 }
 
 .section5 {
