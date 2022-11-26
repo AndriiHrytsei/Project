@@ -38,12 +38,18 @@ a {
   flex-direction: column;
 }
 
-.about-food-item h2 {
+.aboud-food-text {
+  width: 300px;
+  line-height: 20px;
+}
+
+.aboud-food-text h2 {
   margin-bottom: 25px;
 }
 
 .about-food-item:first-child {
   justify-content: center;
+  align-items: center;
 }
 
 .about-food-item:nth-child(2) {
@@ -81,8 +87,12 @@ a {
   display: flex;
   border: 1px solid;
   height: 300px;
-  align-self: center;
   flex-direction: column;
+}
+
+.about-us-text {
+  width: 300px;
+  line-height: 20px;
 }
 
 .about-us-item h2 {
@@ -113,6 +123,19 @@ a {
 
 .about-us-item:last-child {
   justify-content: center;
+  align-items: center;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.download h2 {
+  margin-bottom: 30px;
 }
 
 .section5 {

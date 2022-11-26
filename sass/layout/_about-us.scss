@@ -9,10 +9,13 @@
     display: flex;
     border: 1px solid;
     height: 300px;
-    align-self: center;
     flex-direction: column;
-}
 
+}
+.about-us-text{
+    width: 300px;
+    line-height: 20px;
+}
 .about-us-item h2{
     margin-bottom: 25px;
 }
@@ -35,4 +38,5 @@
 }
 .about-us-item:last-child{
     justify-content: center;
+    align-items: center;
 }
