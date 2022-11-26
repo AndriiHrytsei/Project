@@ -23,6 +23,7 @@ a {
 .about-food-box {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: #59260B;
 }
 @media screen and (min-width: 768px) {
   .about-food-box {
@@ -32,19 +33,39 @@ a {
 
 .about-food-item {
   display: flex;
-  border: 1px solid;
   height: 300px;
   align-self: center;
   flex-direction: column;
 }
 
+.about-food-item img {
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #000000;
+}
+@media screen and (min-width: 1440px) {
+  .about-food-item img {
+    width: 330px;
+    height: 220px;
+  }
+}
+
 .aboud-food-text {
   width: 300px;
   line-height: 20px;
+  font-family: "Patrick Hand";
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .aboud-food-text {
+    width: 250px;
+  }
 }
 
 .aboud-food-text h2 {
   margin-bottom: 25px;
+  font-size: 30px;
 }
 
 .about-food-item:first-child {
@@ -63,6 +84,23 @@ a {
   }
 }
 
+@media screen and (max-width: 320px) and (max-width: 768px) {
+  .about-food-item:nth-child(2) img {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-food-item:nth-child(2) img {
+    width: 220px;
+    height: 140px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-food-item:nth-child(2) img {
+    margin-top: 10px;
+  }
+}
+
 .about-food-item:nth-child(3) {
   justify-content: center;
 }
@@ -73,9 +111,27 @@ a {
   }
 }
 
+@media screen and (max-width: 320px) and (max-width: 768px) {
+  .about-food-item:nth-child(3) img {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-food-item:nth-child(3) img {
+    width: 220px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-food-item:nth-child(3) img {
+    margin-bottom: 15px;
+  }
+}
+
 .about-us-box {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: #72360F;
 }
 @media screen and (min-width: 768px) {
   .about-us-box {
@@ -85,18 +141,38 @@ a {
 
 .about-us-item {
   display: flex;
-  border: 1px solid;
   height: 300px;
   flex-direction: column;
+}
+
+.about-us-item img {
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #000000;
+}
+@media screen and (min-width: 1440px) {
+  .about-us-item img {
+    width: 330px;
+    height: 220px;
+  }
 }
 
 .about-us-text {
   width: 300px;
   line-height: 20px;
+  font-family: "Patrick Hand";
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .about-us-text {
+    width: 250px;
+  }
 }
 
 .about-us-item h2 {
   margin-bottom: 25px;
+  font-size: 30px;
 }
 
 .about-us-item:first-child {
@@ -107,6 +183,24 @@ a {
   .about-us-item:first-child {
     justify-content: flex-start;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 320px) and (max-width: 768px) {
+  .about-us-item:first-child img {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-us-item:first-child img {
+    width: 220px;
+    height: 140px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us-item:first-child img {
+    margin-top: 10px;
   }
 }
 
@@ -121,6 +215,23 @@ a {
   }
 }
 
+@media screen and (max-width: 320px) and (max-width: 768px) {
+  .about-us-item:nth-child(2) img {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-us-item:nth-child(2) img {
+    width: 220px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us-item:nth-child(2) img {
+    margin-bottom: 15px;
+  }
+}
+
 .about-us-item:last-child {
   justify-content: center;
   align-items: center;
@@ -132,10 +243,24 @@ a {
   justify-content: center;
   align-items: center;
   height: 200px;
+  background-color: #59260B;
 }
 
 .download h2 {
   margin-bottom: 30px;
+  color: #fff;
+  font-family: "Patrick Hand";
+  font-size: 40px;
+}
+
+.download a button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #ff6600;
+  border: 1px solid #ff6600;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Patrick Hand";
 }
 
 .section5 {

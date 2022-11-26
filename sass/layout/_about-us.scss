@@ -1,23 +1,39 @@
 .about-us-box{
     display: grid;
     grid-template-columns: 1fr;
+    background-color: $color-secondary;
     @media screen and (min-width:768px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 .about-us-item{
     display: flex;
-    border: 1px solid;
     height: 300px;
     flex-direction: column;
-
+    
+}
+.about-us-item img{
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #000000;
+    @media screen and (min-width:1440px) {
+        width: 330px;
+        height: 220px;
+    }
 }
 .about-us-text{
     width: 300px;
     line-height: 20px;
+    font-family: "Patrick Hand";
+    color: $text-color;
+    @media screen and (min-width:768px) {
+        width: 250px;
+    }
 }
 .about-us-item h2{
     margin-bottom: 25px;
+    font-size: 30px;
 }
 .about-us-item:first-child{
     align-items: flex-end;
@@ -28,12 +44,38 @@
         align-items: center;
     }
 }
+.about-us-item:first-child img{
+    @media screen and (max-width:320px) and (max-width:768px) {
+        margin-right: 10px;
+    }
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        width: 220px;
+        height: 140px;    
+        margin-top: 30px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 10px;
+    }
+}
 .about-us-item:nth-child(2){
     align-items: flex-start;
     justify-content: center;
     @media screen and (min-width:768px) {
         justify-content: flex-end;
         align-items: center;
+    }
+
+}
+.about-us-item:nth-child(2) img {
+    @media screen and (max-width:320px) and (max-width:768px) {
+        margin-left: 10px;
+    }
+    @media screen and (min-width:768px) and (max-width:1024px){
+        width: 220px;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 15px;
     }
 }
 .about-us-item:last-child{

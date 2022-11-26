@@ -4,7 +4,20 @@
     justify-content: center;
     align-items: center;
     height: 200px;
+    background-color: $color-primary;
 }
 .download h2{
     margin-bottom: 30px;
+    color: $text-color;
+    font-family: "Patrick Hand";
+    font-size: 40px;
+}
+.download a button{
+    font-size: 20px;
+    padding: 10px;
+    background-color: $button-color;
+    border: 1px solid $button-color;
+    border-radius: 10px;
+    color: $text-color;
+    font-family: "Patrick Hand";
 }
