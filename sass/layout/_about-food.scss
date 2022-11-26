@@ -49,7 +49,7 @@
     }
 }
 .about-food-item:nth-child(2) img{
-    @media screen and (max-width:320px) and (max-width:768px) {
+    @media screen and (min-width:320px) and (max-width:768px) {
         margin-right: 10px;
     }
     @media screen and (min-width:768px) and (max-width:1024px) {
@@ -69,7 +69,7 @@
     }
 }
 .about-food-item:nth-child(3) img{
-    @media screen and (max-width:320px) and (max-width:768px) {
+    @media screen and (min-width:320px) and (max-width:768px) {
         margin-left: 10px;
     }
     @media screen and (min-width:768px) and (max-width:1024px){
