@@ -22,8 +22,8 @@ a {
 
 .hero {
   width: 100%;
-  height: 600px;
-  background-image: url(../../images/bgimg.jpg);
+  height: 400px;
+  background-image: url(../images/bgimg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -31,6 +31,11 @@ a {
   align-items: center;
   background-position: center;
   flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 600px;
+  }
 }
 
 .hero h2 {
@@ -109,7 +114,7 @@ a {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-food-item:nth-child(2) img {
     margin-right: 10px;
   }
@@ -136,7 +141,7 @@ a {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-food-item:nth-child(3) img {
     margin-left: 10px;
   }
@@ -211,7 +216,7 @@ a {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-us-item:first-child img {
     margin-right: 10px;
   }
@@ -240,7 +245,7 @@ a {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-us-item:nth-child(2) img {
     margin-left: 10px;
   }
