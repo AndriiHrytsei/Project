@@ -20,6 +20,31 @@ a {
   text-decoration: none;
 }
 
+.hero {
+  width: 100%;
+  height: 600px;
+  background-image: url(../../images/bgimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  flex-direction: column;
+}
+
+.hero h2 {
+  font-family: "Patrick Hand";
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero h2 {
+    font-size: 60px;
+  }
+}
+
 .about-food-box {
   display: grid;
   grid-template-columns: 1fr;
