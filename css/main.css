@@ -20,10 +20,44 @@ a {
   text-decoration: none;
 }
 
+.hero {
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/bgimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  flex-direction: column;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 600px;
+  }
+}
+
+.hero h2 {
+  font-family: "Roboto";
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero h2 {
+    font-size: 60px;
+  }
+}
+
 .about-food-box {
   display: grid;
   grid-template-columns: 1fr;
+  width: 100%;
   background-color: #59260B;
+  box-shadow: 0 -60px 60px 50px #59260B;
 }
 @media screen and (min-width: 768px) {
   .about-food-box {
@@ -53,9 +87,10 @@ a {
 
 .aboud-food-text {
   width: 300px;
-  line-height: 20px;
-  font-family: "Patrick Hand";
+  line-height: 16px;
+  font-family: "Roboto";
   color: #fff;
+  font-size: 15px;
 }
 @media screen and (min-width: 768px) {
   .aboud-food-text {
@@ -64,7 +99,7 @@ a {
 }
 
 .aboud-food-text h2 {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-size: 30px;
 }
 
@@ -84,7 +119,7 @@ a {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-food-item:nth-child(2) img {
     margin-right: 10px;
   }
@@ -111,7 +146,7 @@ a {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-food-item:nth-child(3) img {
     margin-left: 10px;
   }
@@ -132,6 +167,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #72360F;
+  box-shadow: 0 60px 60px 50px #59260B;
 }
 @media screen and (min-width: 768px) {
   .about-us-box {
@@ -160,9 +196,10 @@ a {
 
 .about-us-text {
   width: 300px;
-  line-height: 20px;
-  font-family: "Patrick Hand";
+  line-height: 16px;
+  font-family: "Roboto";
   color: #fff;
+  font-size: 15px;
 }
 @media screen and (min-width: 768px) {
   .about-us-text {
@@ -186,7 +223,7 @@ a {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-us-item:first-child img {
     margin-right: 10px;
   }
@@ -215,7 +252,7 @@ a {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-us-item:nth-child(2) img {
     margin-left: 10px;
   }
@@ -242,26 +279,27 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 230px;
   background-color: #59260B;
+  box-shadow: 0 60px 80px 50px #59260B;
 }
 
 .download h2 {
   margin-bottom: 15px;
   color: #fff;
-  font-family: "Patrick Hand";
+  font-family: "Roboto";
   font-size: 40px;
   text-align: center;
 }
 
 .download a button {
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px;
   background-color: #ff6600;
   border: 1px solid #ff6600;
   border-radius: 10px;
   color: #fff;
-  font-family: "Patrick Hand";
+  font-family: "Roboto";
   box-shadow: 5px 5px 5px #000000;
 }
 

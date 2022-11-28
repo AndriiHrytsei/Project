@@ -1,7 +1,9 @@
 .about-food-box{
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
     background-color: $color-primary;
+    box-shadow: 0 -60px 60px 50px $color-primary;
     @media screen and (min-width:768px){
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -24,15 +26,16 @@
 }
 .aboud-food-text{
     width: 300px;
-    line-height: 20px;
-    font-family: "Patrick Hand";
+    line-height: 16px;
+    font-family:"Roboto";
     color: $text-color;
+    font-size: 15px;
     @media screen and (min-width:768px) {
         width: 250px;
     }
 }
 .aboud-food-text h2{
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-size: 30px;
 }
 .about-food-item:first-child{
@@ -49,7 +52,7 @@
     }
 }
 .about-food-item:nth-child(2) img{
-    @media screen and (min-width:320px) and (max-width:768px) {
+    @media screen and (max-width:768px) {
         margin-right: 10px;
     }
     @media screen and (min-width:768px) and (max-width:1024px) {
@@ -69,7 +72,7 @@
     }
 }
 .about-food-item:nth-child(3) img{
-    @media screen and (min-width:320px) and (max-width:768px) {
+    @media screen and (max-width:768px) {
         margin-left: 10px;
     }
     @media screen and (min-width:768px) and (max-width:1024px){

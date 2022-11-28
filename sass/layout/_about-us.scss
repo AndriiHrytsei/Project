@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     background-color: $color-secondary;
+    box-shadow: 0 60px 60px 50px $color-primary;
     @media screen and (min-width:768px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -24,9 +25,10 @@
 }
 .about-us-text{
     width: 300px;
-    line-height: 20px;
-    font-family: "Patrick Hand";
+    line-height: 16px;
+    font-family:"Roboto";
     color: $text-color;
+    font-size: 15px;
     @media screen and (min-width:768px) {
         width: 250px;
     }
@@ -45,7 +47,7 @@
     }
 }
 .about-us-item:first-child img{
-    @media screen and (min-width:320px) and (max-width:768px) {
+    @media screen and (max-width:768px) {
         margin-right: 10px;
     }
     @media screen and (min-width:768px) and (max-width:1024px) {
@@ -67,7 +69,7 @@
 
 }
 .about-us-item:nth-child(2) img {
-    @media screen and (min-width:320px) and (max-width:768px) {
+    @media screen and (max-width:768px) {
         margin-left: 10px;
     }
     @media screen and (min-width:768px) and (max-width:1024px){
