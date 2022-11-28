@@ -24,9 +24,10 @@
 }
 .about-us-text{
     width: 300px;
-    line-height: 20px;
-    font-family: "Patrick Hand";
+    line-height: 16px;
+    font-family:"Roboto";
     color: $text-color;
+    font-size: 15px;
     @media screen and (min-width:768px) {
         width: 250px;
     }
