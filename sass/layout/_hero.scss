@@ -9,6 +9,8 @@
     align-items: center;
     background-position: center;
     flex-direction: column;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.6);
     @media screen and (min-width:1024px) {
         height: 600px;
     }
