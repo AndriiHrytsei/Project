@@ -68,20 +68,24 @@
 
         </section>
         <section class="section5">
-            <div>
-            <h2>Замовлення столу</h2>
-            <input type="date" id="date" name="trip-start" value="2022-11-01" min="2022-11-01" max="2022-12-31">
-            <input type="time" id="time" name="appt" min="09:00" max="21:00" required>
-            <select name="Party size" id="list">
-                <option value="">Кількість місць</option>
-                <option value="">на 1 місце</option>
-                <option value="">на 2 місцья</option>
-                <option value="">на 3 місцья</option>
-                <option value="">на 4 місцья</option>
-                <option value="">на 5 місцья</option>
-                <option value="">на 6 місцья</option>
-            </select>
-            <button>Забронювати зараз</button>
+            <div class="div-section5">
+                <div class="div2-section5">
+                    <h2 class="reserve-h2">Замовлення столу</h2>
+                    <div class="reserve-input">
+                        <input type="date" id="date" name="trip-start" value="2022-11-01" min="2022-11-01" max="2022-12-31">
+                        <input type="time" id="time" name="appt" min="09:00" max="21:00" required>
+                        <select name="Party size" id="list">
+                            <option value="">Кількість місць</option>
+                            <option value="">на 1 місце</option>
+                            <option value="">на 2 місцья</option>
+                            <option value="">на 3 місцья</option>
+                            <option value="">на 4 місцья</option>
+                            <option value="">на 5 місцья</option>
+                            <option value="">на 6 місцья</option>
+                        </select>
+                        <button class="button-reserve">Забронювати зараз</button>
+                    </div>
+            </div>
         </div>
         </section>
     </main>
@@ -97,7 +101,7 @@
             <ul>
                 <li>
                     <svg>
-                        <use></use>
+                        <use href="./sprite.svg#icon-instagram"></use>
                     </svg>
                 </li>
                 <li>
