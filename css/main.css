@@ -41,7 +41,7 @@ a {
 }
 
 .hero h2 {
-  font-family: "Patrick Hand";
+  font-family: "Roboto";
   color: #fff;
   font-size: 40px;
   text-align: center;
@@ -85,9 +85,10 @@ a {
 
 .aboud-food-text {
   width: 300px;
-  line-height: 20px;
-  font-family: "Patrick Hand";
+  line-height: 16px;
+  font-family: "Roboto";
   color: #fff;
+  font-size: 15px;
 }
 @media screen and (min-width: 768px) {
   .aboud-food-text {
@@ -96,7 +97,7 @@ a {
 }
 
 .aboud-food-text h2 {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-size: 30px;
 }
 
@@ -192,9 +193,10 @@ a {
 
 .about-us-text {
   width: 300px;
-  line-height: 20px;
-  font-family: "Patrick Hand";
+  line-height: 16px;
+  font-family: "Roboto";
   color: #fff;
+  font-size: 15px;
 }
 @media screen and (min-width: 768px) {
   .about-us-text {
@@ -281,19 +283,19 @@ a {
 .download h2 {
   margin-bottom: 15px;
   color: #fff;
-  font-family: "Patrick Hand";
+  font-family: "Roboto";
   font-size: 40px;
   text-align: center;
 }
 
 .download a button {
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px;
   background-color: #ff6600;
   border: 1px solid #ff6600;
   border-radius: 10px;
   color: #fff;
-  font-family: "Patrick Hand";
+  font-family: "Roboto";
   box-shadow: 5px 5px 5px #000000;
 }
 
