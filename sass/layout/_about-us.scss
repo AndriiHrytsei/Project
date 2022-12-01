@@ -37,7 +37,7 @@
 
 .about-us-bg{
     @extend .about-food-bg;
-    background-image: url(../../images/pexels-dana-tentis-262959.jpg);
+    background-image: url(../images/pexels-dana-tentis-262959.jpg);
     @media screen and (min-width:768px) {
         width: 220px;
         height: 200px;
@@ -54,7 +54,7 @@
 
 .about-us-bg2{
     @extend .about-food-bg2;
-    background-image: url(../../images/pexels-sydney-troxell-718742.jpg);
+    background-image: url(../images/pexels-sydney-troxell-718742.jpg);
     @media screen and (min-width:768px) {
         width: 220px;
         height: 140px;

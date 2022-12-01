@@ -112,7 +112,7 @@ a {
   width: 280px;
   height: 200px;
   border-radius: 10px;
-  background-image: url(../../images/pexels-lisa-fotios-1279330.jpg);
+  background-image: url(../images/pexels-lisa-fotios-1279330.jpg);
   background-position: center;
   background-size: cover;
   transition-property: box-shadow;
@@ -153,7 +153,7 @@ a {
 }
 
 .about-food-bg2, .about-us-bg2 {
-  background-image: url(../../images/pexels-pixabay-461198\ \(1\).jpg);
+  background-image: url(../images/pexels-pixabay-461198\ \(1\).jpg);
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -256,7 +256,7 @@ a {
 }
 
 .about-us-bg {
-  background-image: url(../../images/pexels-dana-tentis-262959.jpg);
+  background-image: url(../images/pexels-dana-tentis-262959.jpg);
 }
 @media screen and (min-width: 768px) {
   .about-us-bg {
@@ -272,7 +272,7 @@ a {
 }
 
 .about-us-bg2 {
-  background-image: url(../../images/pexels-sydney-troxell-718742.jpg);
+  background-image: url(../images/pexels-sydney-troxell-718742.jpg);
 }
 @media screen and (min-width: 768px) {
   .about-us-bg2 {
