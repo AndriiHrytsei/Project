@@ -16,13 +16,17 @@ body, html {
   width: 100%;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
 
 .hero {
   width: 100%;
-  height: 400px;
+  height: 550px;
   background-image: url(../images/bgimg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,11 +36,12 @@ a {
   background-position: center;
   flex-direction: column;
   background-blend-mode: darken;
+  background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.6);
 }
 @media screen and (min-width: 1024px) {
   .hero {
-    height: 600px;
+    height: 700px;
   }
 }
 
@@ -45,6 +50,11 @@ a {
   color: #fff;
   font-size: 40px;
   text-align: center;
+  display: inline-block;
+  -webkit-animation: fadeInDown;
+          animation: fadeInDown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 @media screen and (min-width: 768px) {
   .hero h2 {
@@ -71,18 +81,119 @@ a {
   align-self: center;
   flex-direction: column;
 }
+.about-food-item:first-child {
+  justify-content: center;
+  align-items: center;
+}
+.about-food-item:nth-child(2) {
+  align-items: flex-end;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .about-food-item:nth-child(2) {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.about-food-item:nth-child(3) {
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .about-food-item:nth-child(3) {
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 
-.about-food-item img {
+.about-food-bg, .about-us-bg, .about-food-bg2, .about-us-bg2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 280px;
   height: 200px;
   border-radius: 10px;
-  box-shadow: 10px 10px 5px #000000;
+  background-image: url(../../images/pexels-lisa-fotios-1279330.jpg);
+  background-position: center;
+  background-size: cover;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+@media screen and (min-width: 320px) {
+  .about-food-bg, .about-us-bg, .about-food-bg2, .about-us-bg2 {
+    margin-right: 7px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-food-bg, .about-us-bg, .about-food-bg2, .about-us-bg2 {
+    width: 220px;
+    height: 140px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-food-bg, .about-us-bg, .about-food-bg2, .about-us-bg2 {
+    width: 300px;
+    height: 220px;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .about-food-item img {
+  .about-food-bg, .about-us-bg, .about-food-bg2, .about-us-bg2 {
     width: 330px;
     height: 220px;
   }
+}
+.about-food-bg:hover, .about-us-bg:hover, .about-food-bg2:hover, .about-us-bg2:hover {
+  box-shadow: 0 10px 15px 5px #000000;
+}
+.about-food-bg:active, .about-us-bg:active, .about-food-bg2:active, .about-us-bg2:active {
+  box-shadow: 0 10px 15px 5px #000000;
+}
+
+.about-food-bg2, .about-us-bg2 {
+  background-image: url(../../images/pexels-pixabay-461198\ \(1\).jpg);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 320px) {
+  .about-food-bg2, .about-us-bg2 {
+    margin-left: 7px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-food-bg2, .about-us-bg2 {
+    width: 220px;
+    height: 200px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-food-bg2, .about-us-bg2 {
+    width: 330px;
+    height: 220px;
+  }
+}
+
+.about-food-bg-heading, .about-us-bg-heading {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: "Roboto";
+  font-size: 18px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+
+.about-food-bg:hover h2, .about-us-bg:hover h2, .about-food-bg2:hover h2, .about-us-bg2:hover h2 {
+  opacity: 1;
 }
 
 .aboud-food-text {
@@ -103,66 +214,6 @@ a {
   font-size: 30px;
 }
 
-.about-food-item:first-child {
-  justify-content: center;
-  align-items: center;
-}
-
-.about-food-item:nth-child(2) {
-  justify-content: center;
-  align-items: flex-end;
-}
-@media screen and (min-width: 768px) {
-  .about-food-item:nth-child(2) {
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .about-food-item:nth-child(2) img {
-    margin-right: 10px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .about-food-item:nth-child(2) img {
-    width: 220px;
-    height: 140px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about-food-item:nth-child(2) img {
-    margin-top: 10px;
-  }
-}
-
-.about-food-item:nth-child(3) {
-  justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .about-food-item:nth-child(3) {
-    justify-content: flex-end;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .about-food-item:nth-child(3) img {
-    margin-left: 10px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .about-food-item:nth-child(3) img {
-    width: 220px;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about-food-item:nth-child(3) img {
-    margin-bottom: 15px;
-  }
-}
-
 .about-us-box {
   display: grid;
   grid-template-columns: 1fr;
@@ -179,15 +230,64 @@ a {
   height: 300px;
   flex-direction: column;
 }
+.about-us-item:first-child {
+  align-items: flex-end;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .about-us-item:first-child {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.about-us-item:nth-child(2) {
+  align-items: flex-start;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .about-us-item:nth-child(2) {
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+.about-us-item:last-child {
+  justify-content: center;
+  align-items: center;
+}
 
-.about-us-item img {
-  width: 280px;
-  height: 200px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 5px #000000;
+.about-us-bg {
+  background-image: url(../../images/pexels-dana-tentis-262959.jpg);
+}
+@media screen and (min-width: 768px) {
+  .about-us-bg {
+    width: 220px;
+    height: 200px;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .about-us-item img {
+  .about-us-bg {
+    width: 330px;
+    height: 220px;
+  }
+}
+
+.about-us-bg2 {
+  background-image: url(../../images/pexels-sydney-troxell-718742.jpg);
+}
+@media screen and (min-width: 768px) {
+  .about-us-bg2 {
+    width: 220px;
+    height: 140px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-us-bg2 {
+    width: 300px;
+    height: 220px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-us-bg2 {
     width: 330px;
     height: 220px;
   }
@@ -206,71 +306,9 @@ a {
   }
 }
 
-.about-us-item h2 {
+.about-us-text h2 {
   margin-bottom: 25px;
   font-size: 30px;
-}
-
-.about-us-item:first-child {
-  align-items: flex-end;
-  justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .about-us-item:first-child {
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .about-us-item:first-child img {
-    margin-right: 10px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .about-us-item:first-child img {
-    width: 220px;
-    height: 140px;
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about-us-item:first-child img {
-    margin-top: 10px;
-  }
-}
-
-.about-us-item:nth-child(2) {
-  align-items: flex-start;
-  justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .about-us-item:nth-child(2) {
-    justify-content: flex-end;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .about-us-item:nth-child(2) img {
-    margin-left: 10px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .about-us-item:nth-child(2) img {
-    width: 220px;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about-us-item:nth-child(2) img {
-    margin-bottom: 15px;
-  }
-}
-
-.about-us-item:last-child {
-  justify-content: center;
-  align-items: center;
 }
 
 .download {
@@ -281,7 +319,7 @@ a {
   align-items: center;
   height: 230px;
   background-color: #59260B;
-  box-shadow: 0px 40px 60px 40px #59260B;
+  box-shadow: 0px 55px 60px 50px #59260B;
 }
 
 .download h2 {
@@ -300,7 +338,13 @@ a {
   border-radius: 10px;
   color: #fff;
   font-family: "Roboto";
-  box-shadow: 5px 5px 5px #000000;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+.download a button:hover {
+  box-shadow: 0 5px 15px 5px #000000;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -311,6 +355,7 @@ a {
     background-position: 100%;
     min-width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../fon_section5.png);
+    background-attachment: fixed;
   }
   .div-section5 {
     width: 100%;
@@ -372,6 +417,7 @@ a {
     background-position: 100%;
     min-width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../fon_section5.png);
+    background-attachment: fixed;
   }
   .div-section5 {
     width: 100%;
@@ -439,6 +485,7 @@ a {
     background-position: 100%;
     min-width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../fon_section5.png);
+    background-attachment: fixed;
   }
   .div-section5 {
     width: 100%;
@@ -500,6 +547,7 @@ a {
     width: 100%;
     height: 350px;
     background-color: #59260b;
+    box-shadow: 0px -5px 65px 70px #59260B;
   }
   .h2-footer-logo {
     font-weight: 700;
