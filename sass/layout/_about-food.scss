@@ -42,7 +42,7 @@
     width: 280px;
     height: 200px;
     border-radius: 10px;
-    background-image: url(../../images/pexels-lisa-fotios-1279330.jpg);
+    background-image: url(../images/pexels-lisa-fotios-1279330.jpg);
     background-position: center;
     background-size: cover;
     transition-property: box-shadow;
@@ -76,7 +76,7 @@
 }
 .about-food-bg2{
     @extend .about-food-bg;
-    background-image: url(../../images/pexels-pixabay-461198\ \(1\).jpg);
+    background-image: url(../images/pexels-pixabay-461198\ \(1\).jpg);
     margin-top: 0;
     margin-bottom: 10px;
     @media screen and (min-width:320px) {
