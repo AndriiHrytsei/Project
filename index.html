@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300;400;500&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
 </head>
 <body>
     <header>
-
+        <div>
+            <img src="./images/logo.png" alt="logo" width="70" height="60">
+            <p>Miglior ristorante</p>
+        </div>
+        <nav>
+            <a href="#about-food">Про нашу їжу</a>
+            <a href="#about-us">Про нас</a>
+            <a href="#download">Завантажити меню</a>
+            <a href="#list">Резервації</a>
+        </nav>
     </header>
     <main>
+        <!-- ====================== HERO =================== -->
         <section class="hero">
-            <h2>Lorem ipsum dolor sit.</h2>
+            <h2 class="">Lorem ipsum dolor sit.</h2>
         </section>
         <!-- ==================== ABOUT FOOD SECTION ===================== -->
         <section class="about-food" id="about-food">
@@ -34,10 +41,14 @@
                     </div>
                 </div>
                 <div class="about-food-item">
-                    <img src="./images/pexels-lisa-fotios-1279330.jpg" alt="food-img">
+                    <div class="about-food-bg">
+                        <h2 class="about-food-bg-heading">Lorem, ipsum.</h2>
+                    </div>
                 </div>
                 <div class="about-food-item">
-                    <img src="./images/pexels-pixabay-461198 (1).jpg" alt="food-img">
+                    <div class="about-food-bg2">
+                        <h2 class="about-food-bg-heading">Lorem, ipsum.</h2>
+                    </div>
                 </div>
             </div>
         </section>
@@ -45,10 +56,14 @@
         <section class="about-us" id="about-us">
             <div class="about-us-box">
                 <div class="about-us-item">
-                    <img src="./images/pexels-dana-tentis-262959.jpg" alt="food-img">
+                    <div class="about-us-bg">
+                        <h2 class="about-us-bg-heading">Lorem, ipsum.</h2>
+                    </div>
                 </div>
                 <div class="about-us-item">
-                    <img src="./images/pexels-sydney-troxell-718742.jpg" alt="food-img">
+                    <div class="about-us-bg2">
+                        <h2 class="about-us-bg-heading">Lorem, ipsum.</h2>
+                    </div>
                 </div>            
                 <div class="about-us-item">
                     <div class="about-us-text">
@@ -60,6 +75,7 @@
                 </div>
             </div>
         </section>
+        <!-- ======================== DOWNLOAD MENU ================== -->
         <section class="download" id="download">
             <h2>Завантажте наше меню ось тут:</h2>
             <a href="./menu.pdf" download="menu"><button type="button">Завантажити меню</button></a>
@@ -68,49 +84,57 @@
 
         </section>
         <section class="section5">
-            <div>
-            <h2>Замовлення столу</h2>
-            <input type="date" id="date" name="trip-start" value="2022-11-01" min="2022-11-01" max="2022-12-31">
-            <input type="time" id="time" name="appt" min="09:00" max="21:00" required>
-            <select name="Party size" id="list">
-                <option value="">Кількість місць</option>
-                <option value="">на 1 місце</option>
-                <option value="">на 2 місцья</option>
-                <option value="">на 3 місцья</option>
-                <option value="">на 4 місцья</option>
-                <option value="">на 5 місцья</option>
-                <option value="">на 6 місцья</option>
-            </select>
-            <button>Забронювати зараз</button>
+            <div class="div-section5">
+                <div class="div2-section5">
+                    <h2 class="reserve-h2">Замовлення столу</h2>
+                    <div class="reserve-input">
+                        <input type="date" id="date" name="trip-start" value="2022-11-01" min="2022-11-01" max="2022-12-31">
+                        <input type="time" id="time" name="appt" min="09:00" max="21:00" required>
+                        <select name="Party size" id="list">
+                            <option value="">Кількість місць</option>
+                            <option value="">на 1 місце</option>
+                            <option value="">на 2 місцья</option>
+                            <option value="">на 3 місцья</option>
+                            <option value="">на 4 місцья</option>
+                            <option value="">на 5 місцья</option>
+                            <option value="">на 6 місцья</option>
+                        </select>
+                        <button class="button-reserve">Забронювати зараз</button>
+                    </div>
+            </div>
         </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <h2>Lorem ipsum dolor</h2>
-            <ul>
-                <li>Lorem Ipsum is simply dummy text</li>
-                <li>Lorem Ipsum is simply dummy text</li>
-                <li>Lorem Ipsum is simply dummy text</li>
-            </ul>
-            <p>Соц-сети:</p>
-            <ul>
-                <li>
-                    <svg>
-                        <use></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg>
-                        <use></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg>
-                        <use></use>
-                    </svg>
-                </li>
-            </ul>
+    <footer class="footer">
+        <div class="div-footer">
+            <a href="" class="a-footer-logo"><h2 class="h2-footer-logo">Lorem ipsum dolor</h2></a>
+            <div class="div2-footer">
+                <ul class="ul-footer">
+                    <li class="li-footer">Lorem Ipsum is simply dummy text</li>
+                    <li class="li-footer">Lorem Ipsum is simply dummy text</li>
+                    <li class="li-footer">Lorem Ipsum is simply dummy text</li>
+                </ul>
+                <div class="div3-footer">
+                    <p class="social-networks-footer">Соц-сети:</p>
+                    <ul class="ul-svg-footer">
+                        <li class="li-svg-footer">
+                            <svg class="svg-footer">
+                                <use href="./sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="li-svg-footer">
+                            <svg class="svg-footer">
+                                <use href="./sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </li>
+                        <li class="li-svg-footer">
+                            <svg class="svg-footer">
+                                <use href="./sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 
