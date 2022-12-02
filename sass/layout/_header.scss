@@ -1,0 +1,57 @@
+header {
+    position: relative;
+    height: 112px;
+    background-color: $color-secondary;
+    flex-direction: row;
+    justify-content: space-around;    
+    box-shadow: 0 13px 40px 40px $color-secondary;
+
+    a, p {
+        font-family: 'Patrick Hand';
+        color: $text-color;
+        font-size: 20px;
+    }
+
+    &, nav, div {
+        display: flex;
+    }
+
+    nav, div {
+        align-items: center;
+    }
+
+    a {
+        border-radius: 5px;
+        padding: 6px;
+
+        &:hover {
+            background-color: orange;
+        }
+    }
+
+    nav {
+        width: 550px;
+        justify-content: space-between;
+    }
+
+    div {
+        flex-direction: column;
+
+        p, img {
+            margin-top: 8px;
+        }
+        
+    }
+
+    @media screen and (max-width:768px) {
+        p, nav {
+            display: none;
+        }
+
+        img {
+            margin: auto;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
