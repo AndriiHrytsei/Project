@@ -24,6 +24,53 @@ a {
   text-decoration: none;
 }
 
+header {
+  position: relative;
+  height: 112px;
+  background-color: #59260B;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0 13px 40px 40px #59260B;
+}
+header a, header p {
+  font-family: "Patrick Hand";
+  color: #fff;
+  font-size: 20px;
+}
+header, header nav, header div {
+  display: flex;
+}
+header nav, header div {
+  align-items: center;
+}
+header a {
+  border-radius: 5px;
+  padding: 6px;
+}
+header a:hover {
+  background-color: orange;
+}
+header nav {
+  width: 550px;
+  justify-content: space-between;
+}
+header div {
+  flex-direction: column;
+}
+header div p, header div img {
+  margin-top: 8px;
+}
+@media screen and (max-width: 768px) {
+  header p, header nav {
+    display: none;
+  }
+  header img {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .hero {
   width: 100%;
   height: 550px;
@@ -36,7 +83,7 @@ a {
   background-position: center;
   flex-direction: column;
   background-blend-mode: darken;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 @media screen and (min-width: 1024px) {
   .hero {
