@@ -1,10 +1,10 @@
 header {
     position: relative;
     height: 112px;
-    background-color: $color-secondary;
+    background-color: $color-primary;
     flex-direction: row;
     justify-content: space-around;    
-    box-shadow: 0 13px 40px 40px $color-secondary;
+    box-shadow: 0 13px 40px 40px $color-primary;
 
     a, p {
         font-family: 'Patrick Hand';
