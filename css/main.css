@@ -441,7 +441,6 @@ header div p, header div img {
   box-shadow: 0 5px 15px 5px #000000;
 }
 
-
 .section5 {
   width: 100%;
   height: 700px;
@@ -449,7 +448,6 @@ header div p, header div img {
   background-position: 100%;
   min-width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../fon_section5.png);
-  background-attachment: fixed;
 }
 
 .div-section5 {
@@ -471,92 +469,7 @@ header div p, header div img {
   width: 325px;
   text-align: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .section5 {
-    width: 100%;
-    height: 700px;
-    background-size: cover;
-    background-position: 100%;
-    min-width: 100%;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../fon_section5.png);
-  }
-  .div-section5 {
-    width: 100%;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .reserve-h2 {
-    color: #fff;
-    font-family: "Patrick Hand";
-    font-size: 40px;
-    text-align: center;
-  }
-  .reserve-input {
-    width: 325px;
-    text-align: center;
-  }
-  #date {
-    width: 280px;
-    height: 40px;
-    background-color: white;
-    font-weight: bold;
-    border-color: #fff;
-    margin-top: 20px;
-  }
-  #time {
-    width: 280px;
-    height: 40px;
-    background-color: white;
-    font-weight: bold;
-    border-color: #fff;
-    margin-top: 10px;
-  }
-  #list {
-    width: 285px;
-    height: 40px;
-    background-color: white;
-    font-weight: bold;
-    padding: 1px;
-    border: 2px solid white;
-    margin-top: 10px;
-  }
-  .button-reserve {
-    background-color: #f60;
-    border: 1px solid #f60;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #fff;
-    margin-top: 25px;
-    padding: 15px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .section5 {
-    width: 100%;
-    height: 700px;
-    background-size: cover;
-    background-position: 100%;
-    min-width: 100%;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../fon_section5.png);
-  }
-  .div-section5 {
-    width: 100%;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .reserve-h2 {
-    color: #fff;
-    font-family: "Patrick Hand";
-    font-size: 40px;
-    text-align: center;
-  }
-
+@media screen and (min-width: 768px) {
   .reserve-input {
     width: 600px;
     margin-top: 30px;
@@ -564,7 +477,6 @@ header div p, header div img {
 }
 @media screen and (min-width: 1025px) {
   .reserve-input {
-    margin-top: 30px;
     width: 100%;
   }
 }
@@ -577,13 +489,9 @@ header div p, header div img {
   border-color: #fff;
   margin-top: 20px;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   #date {
-    margin-right: 10px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  #date {
+    margin-top: 10px;
     margin-right: 10px;
   }
 }
@@ -596,12 +504,7 @@ header div p, header div img {
   border-color: #fff;
   margin-top: 10px;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #time {
-    margin-right: 10px;
-  }
-}
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
   #time {
     margin-right: 10px;
   }
@@ -616,90 +519,30 @@ header div p, header div img {
   border: 2px solid white;
   margin-top: 10px;
 }
-@media screen and (min-width: 1025px) {
-  #list {
-    margin-right: 20px;
-  }
-}
-
 
 .button-reserve {
-  height: 40px;
   background-color: #f60;
   border: 1px solid #f60;
   border-radius: 10px;
   font-size: 20px;
   color: #fff;
   margin-top: 25px;
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .footer {
-    width: 100%;
-    height: 350px;
-    background-color: #59260b;
-  }
-  .h2-footer-logo {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 69px;
-    font-family: "Patrick Hand";
-    color: white;
-  }
-  .a-footer-logo {
-    height: 70px;
-    text-align: center;
-  }
-  .div2-footer {
-    display: flex;
-    justify-content: space-around;
-  }
-  .li-footer {
-    color: white;
-    list-style-type: none;
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 35px;
-    font-family: "Patrick Hand";
-  }
-  .social-networks-footer {
-    color: white;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 35px;
-    font-family: "Patrick Hand";
-  }
-  .ul-svg-footer {
-    display: flex;
-    padding: 0;
-  }
-  .li-svg-footer {
-    list-style-type: none;
-    width: 25px;
-    height: 25px;
-    margin-right: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-  }
-  .svg-footer {
-    width: 18px;
-    height: 18px;
-    fill: white;
-  }
-  .li-svg-footer:hover,
-.svg-footer:hover {
-    background-color: white;
-    fill: #59260b;
-  }
-
+  padding: 10px;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .button-reserve {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .button-reserve {
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+    height: 40px;
+    padding: 0;
   }
 }
 
@@ -707,7 +550,6 @@ header div p, header div img {
   width: 100%;
   height: 350px;
   background-color: #59260b;
-  box-shadow: 0px -5px 65px 70px #59260B;
 }
 
 .h2-footer-logo {
