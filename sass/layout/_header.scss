@@ -1,13 +1,24 @@
 header {
-    position: relative;
-    height: 112px;
+    position: fixed;
     background-color: $color-primary;
+    background-attachment: fixed;
     flex-direction: row;
     justify-content: space-around;    
-    box-shadow: 0 13px 40px 40px $color-primary;
-
+    width: 100%;
+    transition-property: box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+    &:hover{
+        box-shadow: 0 10px 15px 5px #000000;
+    }
+    .logo-text{
+        font-family: "Permanent Marker";
+        font-size: 13px;
+        margin-top: 0;
+    }
     a, p {
-        font-family: 'Patrick Hand';
+        font-family: 'Roboto';
         color: $text-color;
         font-size: 20px;
     }
@@ -23,9 +34,12 @@ header {
     a {
         border-radius: 5px;
         padding: 6px;
-
+        transition-property: color;
+        transition-duration: 300ms;
+        transition-timing-function: linear;
+        transition-delay: 0;
         &:hover {
-            background-color: orange;
+            color: $button-color;
         }
     }
 
@@ -43,8 +57,9 @@ header {
         
     }
 
-    @media screen and (max-width:768px) {
-        p, nav {
+    @media screen and (max-width:767px) {
+        height: 130px;
+        nav {
             display: none;
         }
 

@@ -25,15 +25,27 @@ a {
 }
 
 header {
-  position: relative;
-  height: 112px;
+  position: fixed;
   background-color: #59260B;
+  background-attachment: fixed;
   flex-direction: row;
   justify-content: space-around;
-  box-shadow: 0 13px 40px 40px #59260B;
+  width: 100%;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+header:hover {
+  box-shadow: 0 10px 15px 5px #000000;
+}
+header .logo-text {
+  font-family: "Permanent Marker";
+  font-size: 13px;
+  margin-top: 0;
 }
 header a, header p {
-  font-family: "Patrick Hand";
+  font-family: "Roboto";
   color: #fff;
   font-size: 20px;
 }
@@ -46,9 +58,13 @@ header nav, header div {
 header a {
   border-radius: 5px;
   padding: 6px;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 header a:hover {
-  background-color: orange;
+  color: #ff6600;
 }
 header nav {
   width: 550px;
@@ -60,8 +76,11 @@ header div {
 header div p, header div img {
   margin-top: 8px;
 }
-@media screen and (max-width: 768px) {
-  header p, header nav {
+@media screen and (max-width: 767px) {
+  header {
+    height: 130px;
+  }
+  header nav {
     display: none;
   }
   header img {
@@ -73,7 +92,7 @@ header div p, header div img {
 
 .hero {
   width: 100%;
-  height: 550px;
+  height: 600px;
   background-image: url(../images/bgimg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -93,7 +112,7 @@ header div p, header div img {
 }
 
 .hero h2 {
-  font-family: "Roboto";
+  font-family: "Permanent Marker";
   color: #fff;
   font-size: 40px;
   text-align: center;
@@ -114,7 +133,6 @@ header div p, header div img {
   grid-template-columns: 1fr;
   width: 100%;
   background-color: #59260B;
-  box-shadow: 0px -5px 65px 70px #59260B;
 }
 @media screen and (min-width: 768px) {
   .about-food-box {
@@ -124,7 +142,7 @@ header div p, header div img {
 
 .about-food-item {
   display: flex;
-  height: 300px;
+  height: 400px;
   align-self: center;
   flex-direction: column;
 }
@@ -132,9 +150,19 @@ header div p, header div img {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .about-food-item:first-child {
+    height: 300px;
+  }
+}
 .about-food-item:nth-child(2) {
   align-items: flex-end;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .about-food-item:nth-child(2) {
+    height: 200px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-food-item:nth-child(2) {
@@ -144,6 +172,11 @@ header div p, header div img {
 }
 .about-food-item:nth-child(3) {
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .about-food-item:nth-child(3) {
+    height: 300px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-food-item:nth-child(3) {
@@ -175,9 +208,9 @@ header div p, header div img {
 @media screen and (min-width: 768px) {
   .about-food-bg, .about-us-bg, .about-food-bg2, .about-us-bg2 {
     width: 220px;
-    height: 140px;
-    margin-top: 10px;
+    height: 180px;
     margin-right: 0;
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -202,7 +235,7 @@ header div p, header div img {
 .about-food-bg2, .about-us-bg2 {
   background-image: url(../images/pexels-pixabay-461198\ \(1\).jpg);
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 320px) {
   .about-food-bg2, .about-us-bg2 {
@@ -214,6 +247,7 @@ header div p, header div img {
     width: 220px;
     height: 200px;
     margin-left: 0;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -274,12 +308,17 @@ header div p, header div img {
 
 .about-us-item {
   display: flex;
-  height: 300px;
+  height: 400px;
   flex-direction: column;
 }
 .about-us-item:first-child {
   align-items: flex-end;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .about-us-item:first-child {
+    height: 400px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-us-item:first-child {
@@ -297,9 +336,19 @@ header div p, header div img {
     align-items: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .about-us-item:nth-child(2) {
+    height: 250px;
+  }
+}
 .about-us-item:last-child {
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .about-us-item:last-child {
+    height: 300px;
+  }
 }
 
 .about-us-bg {
@@ -324,7 +373,7 @@ header div p, header div img {
 @media screen and (min-width: 768px) {
   .about-us-bg2 {
     width: 220px;
-    height: 140px;
+    height: 180px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -359,14 +408,12 @@ header div p, header div img {
 }
 
 .download {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 230px;
   background-color: #59260B;
-  box-shadow: 0px 55px 60px 50px #59260B;
 }
 
 .download h2 {
@@ -592,7 +639,6 @@ header div p, header div img {
     width: 100%;
     height: 350px;
     background-color: #59260b;
-    box-shadow: 0px -5px 65px 70px #59260B;
   }
   .h2-footer-logo {
     font-weight: 700;

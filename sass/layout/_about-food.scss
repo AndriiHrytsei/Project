@@ -3,7 +3,6 @@
     grid-template-columns: 1fr;
     width: 100%;
     background-color: $color-primary;
-    box-shadow: 0px -5px 65px 70px $color-primary;
     @media screen and (min-width:768px){
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -11,16 +10,22 @@
 }
 .about-food-item{
     display: flex;
-    height: 300px;
+    height: 400px;
     align-self: center;
     flex-direction: column;
     &:first-child{
         justify-content: center;
         align-items: center;
+        @media screen and (max-width:768px) {
+            height: 300px;
+        }
     }
     &:nth-child(2){
         align-items: flex-end;
         justify-content: center;
+        @media screen and (max-width:768px) {
+            height: 200px;
+        }
         @media screen and (min-width:768px) {
             justify-content: flex-start;
             align-items: center;
@@ -28,6 +33,9 @@
     }
     &:nth-child(3){
         justify-content: center;
+        @media screen and (max-width:768px) {
+            height: 300px;
+        }
         @media screen and (min-width:768px) {
             justify-content: flex-end;
             align-items: center;
@@ -54,9 +62,9 @@
     }
     @media screen and (min-width:768px) {
         width: 220px;
-        height: 140px;
-        margin-top: 10px;
+        height: 180px;
         margin-right: 0;
+        margin-top: 50px;
     }
     @media screen and (min-width:1024px) {
         width: 300px;
@@ -78,7 +86,7 @@
     @extend .about-food-bg;
     background-image: url(../images/pexels-pixabay-461198\ \(1\).jpg);
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     @media screen and (min-width:320px) {
         margin-left: 7px;
     }
@@ -86,6 +94,7 @@
         width: 220px;
         height: 200px;
         margin-left: 0;
+        margin-bottom: 50px;
     }
     @media screen and (min-width:1440px) {
         width: 330px;
