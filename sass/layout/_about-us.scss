@@ -14,7 +14,7 @@
     &:first-child{
         align-items: flex-end;
         justify-content: center;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:767px) {
             height: 400px;
         }
         @media screen and (min-width:768px) {
@@ -29,14 +29,14 @@
             justify-content: flex-end;
             align-items: center;
         }
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:767px) {
             height: 250px;
         }
     }
     &:last-child{
         justify-content: center;
         align-items: center;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:767px) {
             height: 300px;
         }
     }

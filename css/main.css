@@ -150,7 +150,7 @@ header div p, header div img {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about-food-item:first-child {
     height: 300px;
   }
@@ -159,7 +159,7 @@ header div p, header div img {
   align-items: flex-end;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about-food-item:nth-child(2) {
     height: 200px;
   }
@@ -173,7 +173,7 @@ header div p, header div img {
 .about-food-item:nth-child(3) {
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about-food-item:nth-child(3) {
     height: 300px;
   }
@@ -315,7 +315,7 @@ header div p, header div img {
   align-items: flex-end;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about-us-item:first-child {
     height: 400px;
   }
@@ -336,7 +336,7 @@ header div p, header div img {
     align-items: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about-us-item:nth-child(2) {
     height: 250px;
   }
@@ -345,7 +345,7 @@ header div p, header div img {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about-us-item:last-child {
     height: 300px;
   }
