@@ -24,9 +24,75 @@ a {
   text-decoration: none;
 }
 
+header {
+  position: fixed;
+  background-color: #59260B;
+  background-attachment: fixed;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+header:hover {
+  box-shadow: 0 10px 15px 5px #000000;
+}
+header .logo-text {
+  font-family: "Permanent Marker";
+  font-size: 13px;
+  margin-top: 0;
+}
+header a, header p {
+  font-family: "Roboto";
+  color: #fff;
+  font-size: 20px;
+}
+header, header nav, header div {
+  display: flex;
+}
+header nav, header div {
+  align-items: center;
+}
+header a {
+  border-radius: 5px;
+  padding: 6px;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+header a:hover {
+  color: #ff6600;
+}
+header nav {
+  width: 550px;
+  justify-content: space-between;
+}
+header div {
+  flex-direction: column;
+}
+header div p, header div img {
+  margin-top: 8px;
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 130px;
+  }
+  header nav {
+    display: none;
+  }
+  header img {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .hero {
   width: 100%;
-  height: 550px;
+  height: 600px;
   background-image: url(../images/bgimg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,17 +102,17 @@ a {
   background-position: center;
   flex-direction: column;
   background-blend-mode: darken;
-  background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 @media screen and (min-width: 1024px) {
   .hero {
     height: 700px;
+    background-attachment: fixed;
   }
 }
 
 .hero h2 {
-  font-family: "Roboto";
+  font-family: "Permanent Marker";
   color: #fff;
   font-size: 40px;
   text-align: center;
@@ -67,7 +133,6 @@ a {
   grid-template-columns: 1fr;
   width: 100%;
   background-color: #59260B;
-  box-shadow: 0px -5px 65px 70px #59260B;
 }
 @media screen and (min-width: 768px) {
   .about-food-box {
@@ -77,7 +142,7 @@ a {
 
 .about-food-item {
   display: flex;
-  height: 300px;
+  height: 400px;
   align-self: center;
   flex-direction: column;
 }
@@ -85,9 +150,19 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .about-food-item:first-child {
+    height: 300px;
+  }
+}
 .about-food-item:nth-child(2) {
   align-items: flex-end;
   justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .about-food-item:nth-child(2) {
+    height: 200px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-food-item:nth-child(2) {
@@ -97,6 +172,11 @@ a {
 }
 .about-food-item:nth-child(3) {
   justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .about-food-item:nth-child(3) {
+    height: 300px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-food-item:nth-child(3) {
@@ -128,9 +208,9 @@ a {
 @media screen and (min-width: 768px) {
   .about-food-bg, .about-us-bg, .about-food-bg2, .about-us-bg2 {
     width: 220px;
-    height: 140px;
-    margin-top: 10px;
+    height: 180px;
     margin-right: 0;
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -155,7 +235,7 @@ a {
 .about-food-bg2, .about-us-bg2 {
   background-image: url(../images/pexels-pixabay-461198\ \(1\).jpg);
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 320px) {
   .about-food-bg2, .about-us-bg2 {
@@ -167,6 +247,7 @@ a {
     width: 220px;
     height: 200px;
     margin-left: 0;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -227,12 +308,17 @@ a {
 
 .about-us-item {
   display: flex;
-  height: 300px;
+  height: 400px;
   flex-direction: column;
 }
 .about-us-item:first-child {
   align-items: flex-end;
   justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .about-us-item:first-child {
+    height: 400px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-us-item:first-child {
@@ -250,9 +336,19 @@ a {
     align-items: center;
   }
 }
+@media screen and (max-width: 767px) {
+  .about-us-item:nth-child(2) {
+    height: 250px;
+  }
+}
 .about-us-item:last-child {
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .about-us-item:last-child {
+    height: 300px;
+  }
 }
 
 .about-us-bg {
@@ -277,7 +373,7 @@ a {
 @media screen and (min-width: 768px) {
   .about-us-bg2 {
     width: 220px;
-    height: 140px;
+    height: 180px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -312,14 +408,12 @@ a {
 }
 
 .download {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 230px;
   background-color: #59260B;
-  box-shadow: 0px 55px 60px 50px #59260B;
 }
 
 .download h2 {
@@ -346,6 +440,7 @@ a {
 .download a button:hover {
   box-shadow: 0 5px 15px 5px #000000;
 }
+
 
 .section5 {
   width: 100%;
@@ -377,6 +472,91 @@ a {
   text-align: center;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .section5 {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: 100%;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../fon_section5.png);
+  }
+  .div-section5 {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reserve-h2 {
+    color: #fff;
+    font-family: "Patrick Hand";
+    font-size: 40px;
+    text-align: center;
+  }
+  .reserve-input {
+    width: 325px;
+    text-align: center;
+  }
+  #date {
+    width: 280px;
+    height: 40px;
+    background-color: white;
+    font-weight: bold;
+    border-color: #fff;
+    margin-top: 20px;
+  }
+  #time {
+    width: 280px;
+    height: 40px;
+    background-color: white;
+    font-weight: bold;
+    border-color: #fff;
+    margin-top: 10px;
+  }
+  #list {
+    width: 285px;
+    height: 40px;
+    background-color: white;
+    font-weight: bold;
+    padding: 1px;
+    border: 2px solid white;
+    margin-top: 10px;
+  }
+  .button-reserve {
+    background-color: #f60;
+    border: 1px solid #f60;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 25px;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section5 {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: 100%;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../fon_section5.png);
+  }
+  .div-section5 {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reserve-h2 {
+    color: #fff;
+    font-family: "Patrick Hand";
+    font-size: 40px;
+    text-align: center;
+  }
+
   .reserve-input {
     width: 600px;
     margin-top: 30px;
@@ -442,6 +622,7 @@ a {
   }
 }
 
+
 .button-reserve {
   height: 40px;
   background-color: #f60;
@@ -450,6 +631,69 @@ a {
   font-size: 20px;
   color: #fff;
   margin-top: 25px;
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    height: 350px;
+    background-color: #59260b;
+  }
+  .h2-footer-logo {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 69px;
+    font-family: "Patrick Hand";
+    color: white;
+  }
+  .a-footer-logo {
+    height: 70px;
+    text-align: center;
+  }
+  .div2-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .li-footer {
+    color: white;
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+    font-family: "Patrick Hand";
+  }
+  .social-networks-footer {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+    font-family: "Patrick Hand";
+  }
+  .ul-svg-footer {
+    display: flex;
+    padding: 0;
+  }
+  .li-svg-footer {
+    list-style-type: none;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+  }
+  .svg-footer {
+    width: 18px;
+    height: 18px;
+    fill: white;
+  }
+  .li-svg-footer:hover,
+.svg-footer:hover {
+    background-color: white;
+    fill: #59260b;
+  }
+
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .button-reserve {
