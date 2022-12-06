@@ -41,7 +41,7 @@ header:hover {
 }
 header .logo-text {
   font-family: "Permanent Marker";
-  font-size: 13px;
+  font-size: 10px;
   margin-top: 0;
 }
 header a, header p {
@@ -78,15 +78,28 @@ header div p, header div img {
 }
 @media screen and (max-width: 767px) {
   header {
-    height: 130px;
+    height: 95px;
   }
   header nav {
     display: none;
   }
-  header img {
-    margin: auto;
-    width: 100px;
-    height: 100px;
+}
+
+.logo-img {
+  width: 65px;
+  height: 70px;
+}
+
+.logo {
+  -webkit-animation: pulse;
+          animation: pulse;
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    -webkit-animation-duration: 2000ms;
+            animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
   }
 }
 
@@ -448,6 +461,7 @@ header div p, header div img {
   background-position: 100%;
   min-width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../fon_section5.png);
+  background-attachment: fixed;
 }
 
 .div-section5 {
