@@ -12,11 +12,6 @@ header {
     &:hover{
         box-shadow: 0 10px 15px 5px #000000;
     }
-    .logo-text{
-        font-family: "Permanent Marker";
-        font-size: 10px;
-        margin-top: 0;
-    }
     a, p {
         font-family: 'Roboto';
         color: $text-color;
@@ -48,16 +43,6 @@ header {
         justify-content: space-between;
     }
 
-    div {
-        flex-direction: column;
-
-        p, img {
-            margin-top: 8px;
-        }
-        
-    }
-
-
     @media screen and (max-width:767px) {
         height: 95px;
         nav {
@@ -65,18 +50,4 @@ header {
         }
 
     }
-}
-.logo-img{
-    width: 65px;
-    height: 70px;
-}
-
-.logo{
-    animation: pulse;
-    @media screen and (max-width:767px){
-        animation-duration: 2000ms; 
-        animation-iteration-count: infinite;  
-    }
-    
-    
 }

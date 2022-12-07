@@ -1,0 +1,26 @@
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .logo-img{
+        width: 65px;
+        height: 70px;
+    } 
+}
+
+.logo-text{
+    font-family: "Permanent Marker";
+    font-size: 10px;
+    margin-top: 0;
+    color: $text-color;
+}
+header .logo{
+    @media screen and (max-width:767px){
+        animation: pulse;
+        animation-duration: 2000ms; 
+        animation-iteration-count: infinite;  
+    }
+}
