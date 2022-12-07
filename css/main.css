@@ -24,6 +24,35 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo .logo-img {
+  width: 65px;
+  height: 70px;
+}
+
+.logo-text {
+  font-family: "Permanent Marker";
+  font-size: 10px;
+  margin-top: 0;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  header .logo {
+    -webkit-animation: pulse;
+            animation: pulse;
+    -webkit-animation-duration: 2000ms;
+            animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+}
+
 header {
   position: fixed;
   background-color: #59260B;
@@ -38,11 +67,6 @@ header {
 }
 header:hover {
   box-shadow: 0 10px 15px 5px #000000;
-}
-header .logo-text {
-  font-family: "Permanent Marker";
-  font-size: 10px;
-  margin-top: 0;
 }
 header a, header p {
   font-family: "Roboto";
@@ -70,36 +94,12 @@ header nav {
   width: 550px;
   justify-content: space-between;
 }
-header div {
-  flex-direction: column;
-}
-header div p, header div img {
-  margin-top: 8px;
-}
 @media screen and (max-width: 767px) {
   header {
     height: 95px;
   }
   header nav {
     display: none;
-  }
-}
-
-.logo-img {
-  width: 65px;
-  height: 70px;
-}
-
-.logo {
-  -webkit-animation: pulse;
-          animation: pulse;
-}
-@media screen and (max-width: 767px) {
-  .logo {
-    -webkit-animation-duration: 2000ms;
-            animation-duration: 2000ms;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
   }
 }
 
@@ -461,7 +461,11 @@ header div p, header div img {
   background-position: 100%;
   min-width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../fon_section5.png);
-  background-attachment: fixed;
+}
+@media screen and (min-width: 1024px) {
+  .section5 {
+    background-attachment: fixed;
+  }
 }
 
 .div-section5 {
