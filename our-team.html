@@ -14,18 +14,24 @@
 </head>
 <body>
     <header>
-        <a href="./index.html">
+        <nav class="navbar">
             <div class="logo">
-                <img class="logo-img" src="./images/logo.png" alt="logo">
-                <p class="logo-text">Miglior ristorante</p>
+                <a href="./index.html">
+                    <img class="logo-img" src="./images/logo.png" alt="logo">
+                    <p class="logo-text">Miglior ristorante</p>
+                </a>
             </div>
-        </a>
-        <nav>
-            <a href="./index.html#about-food">Про нашу їжу</a>
-            <a href="./index.html#about-us">Про нас</a>
-            <a href="./index.html#download">Завантажити меню</a>
-            <a href="./index.html#reservations">Резервації</a>
-            <a href="./our-team.html">Наша команда</a>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                <li><a href="./index.html#about-food">Про нашу їжу</a></li>
+                <li><a href="./index.html#about-us">Про нас</a></li>
+                <li><a href="./index.html#download">Завантажити меню</a></li>
+                <li><a href="./index.html#reservations">Резервації</a></li>
+                <li><a href="./our-team.html">Наша команда</a></li>
+            </div>
+            </ul>
         </nav>
     </header>
     <main>
