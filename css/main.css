@@ -609,7 +609,7 @@ header nav {
   .div2-footer {
     flex-direction: initial;
     justify-content: space-around;
-    align-items: initial;
+    align-items: baseline;
   }
 }
 
