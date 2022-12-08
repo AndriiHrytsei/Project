@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miglior ristorante</title>
     <link rel="icon" type="image/x-icon" href="./images/logo.png">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300;400;500&family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -106,10 +106,18 @@
                             <option value="">на 5 місць</option>
                             <option value="">на 6 місць</option>
                         </select>
-                        <button class="button-reserve">Забронювати зараз</button>
+                        
+                        <button class="reservenow"><a class="text" href="#win1">Забронювати зараз</a></button>
+                        <a href="#x" class="overlay" id="win1"></a>
+                        <div class="popup">
+                            <img src="./images/phone.png" alt="" width="100px" height="100px">
+                            <h2>We're currently not accepting reservations online.</h2>
+                            <h5>Please call us to complete your reservation:(800)-555-1111</h5>
+                            <a class="close"title="Закрыть" href="#close">OK</a>
+                        </div>    
                     </div>
+                </div>
             </div>
-        </div>
         </section>
     </main>
     <footer class="footer">
