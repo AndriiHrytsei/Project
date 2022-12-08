@@ -1,53 +1,71 @@
-header {
-    position: fixed;
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: $color-primary;
-    background-attachment: fixed;
-    flex-direction: row;
-    justify-content: space-around;    
+    position: fixed;
     width: 100%;
-    transition-property: box-shadow;
-    transition-duration: 300ms;
-    transition-timing-function: linear;
-    transition-delay: 0;
-    &:hover{
-        box-shadow: 0 10px 15px 5px #000000;
+    color: $text-color;
+    
+    @media screen and (min-width:1024px) {
+        transition-property: box-shadow;
+        transition-duration: 300ms;
+        transition-timing-function: linear;
+        transition-delay: 0;
+        &:hover{
+            box-shadow: 0 10px 15px 5px #000000;
+        }
     }
-    a, p {
-        font-family: 'Roboto';
-        color: $text-color;
-        font-size: 15px;
-    }
+}
 
-    &, nav, div {
-        display: flex;
-    }
-
-    nav, div {
-        align-items: center;
-    }
-
-    a {
-        border-radius: 5px;
-        padding: 6px;
+.nav-links {
+    a{
         transition-property: color;
         transition-duration: 300ms;
         transition-timing-function: linear;
         transition-delay: 0;
-        &:hover {
-            color: $button-color;
-        }
+        color: $text-color;
+        font-family: "Roboto";
+        font-size: 15px;
     }
+}
 
-    nav {
-        width: 550px;
-        justify-content: space-between;
-    }
-
+.menu li:hover a{
+    color: $button-color;
+}
+.menu {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
     @media screen and (max-width:767px) {
-        height: 95px;
-        nav {
-            display: none;
+        li{
+            padding-top: 10px;
+            height: 35px;
         }
-
+        box-shadow: 0 25px 25px 5px #000000;
+        display: none;
+        position: absolute;
+        background-color: $color-secondary;
+        right: 0;
+        left: 0;
+        top: 85px;
+        text-align: center;
     }
+}
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 34px;
+    // user-select: none;
+    @media screen and (max-width:767px) {
+        display: block;
+    }
+}
+    
+input[type=checkbox]:checked~.menu {
+    display: block;
 }

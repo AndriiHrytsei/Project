@@ -25,6 +25,14 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  box-sizing: border-box;
+}
+
 .logo {
   display: flex;
   flex-direction: column;
@@ -34,74 +42,92 @@ a {
 .logo .logo-img {
   width: 65px;
   height: 70px;
+  margin-bottom: 0;
+}
+.logo a {
+  text-align: center;
 }
 
 .logo-text {
   font-family: "Permanent Marker";
-  font-size: 10px;
+  font-size: 9px;
   margin-top: 0;
   color: #fff;
 }
 
-@media screen and (max-width: 767px) {
-  header .logo {
-    -webkit-animation: pulse;
-            animation: pulse;
-    -webkit-animation-duration: 2000ms;
-            animation-duration: 2000ms;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #59260B;
+  position: fixed;
+  width: 100%;
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  .navbar {
+    transition-property: box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+  }
+  .navbar:hover {
+    box-shadow: 0 10px 15px 5px #000000;
   }
 }
 
-header {
-  position: fixed;
-  background-color: #59260B;
-  background-attachment: fixed;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  transition-property: box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
-}
-header:hover {
-  box-shadow: 0 10px 15px 5px #000000;
-}
-header a, header p {
-  font-family: "Roboto";
-  color: #fff;
-  font-size: 15px;
-}
-header, header nav, header div {
-  display: flex;
-}
-header nav, header div {
-  align-items: center;
-}
-header a {
-  border-radius: 5px;
-  padding: 6px;
+.nav-links a {
   transition-property: color;
   transition-duration: 300ms;
   transition-timing-function: linear;
   transition-delay: 0;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 15px;
 }
-header a:hover {
+
+.menu li:hover a {
   color: #ff6600;
 }
-header nav {
-  width: 550px;
-  justify-content: space-between;
+
+.menu {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
 }
 @media screen and (max-width: 767px) {
-  header {
-    height: 95px;
-  }
-  header nav {
+  .menu {
+    box-shadow: 0 25px 25px 5px #000000;
     display: none;
+    position: absolute;
+    background-color: #72360F;
+    right: 0;
+    left: 0;
+    top: 85px;
+    text-align: center;
   }
+  .menu li {
+    padding-top: 10px;
+    height: 35px;
+  }
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 34px;
+}
+@media screen and (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+input[type=checkbox]:checked ~ .menu {
+  display: block;
 }
 
 .hero {
