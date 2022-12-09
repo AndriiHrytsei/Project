@@ -17,20 +17,16 @@ body, html {
   width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
 
 a {
   text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  box-sizing: border-box;
 }
 
 .logo {
@@ -85,6 +81,11 @@ a {
   font-family: "Roboto";
   font-size: 15px;
 }
+@media screen and (max-width: 767px) {
+  .nav-links a {
+    margin-right: 30px;
+  }
+}
 
 .menu li:hover a {
   color: #ff6600;
@@ -103,12 +104,13 @@ a {
     background-color: #72360F;
     right: 0;
     left: 0;
-    top: 85px;
+    top: 67.5px;
     text-align: center;
   }
   .menu li {
     padding-top: 10px;
     height: 35px;
+    padding-right: 10px;
   }
 }
 
@@ -464,7 +466,7 @@ input[type=checkbox]:checked ~ .menu {
   text-align: center;
 }
 
-.download a button {
+.download a {
   font-size: 18px;
   padding: 10px;
   background-color: #ff6600;
@@ -477,7 +479,7 @@ input[type=checkbox]:checked ~ .menu {
   transition-timing-function: linear;
   transition-delay: 0;
 }
-.download a button:hover {
+.download a:hover {
   box-shadow: 0 5px 15px 5px #000000;
 }
 
@@ -567,31 +569,79 @@ input[type=checkbox]:checked ~ .menu {
   border-radius: 10px;
   margin-top: 10px;
 }
+@media screen and (min-width: 768px) {
+  #list {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
 
-.button-reserve {
+.reservenow {
+  display: inline-block;
   background-color: #f60;
   border: 1px solid #f60;
   border-radius: 10px;
-  font-size: 20px;
-  color: #fff;
-  margin-top: 25px;
   padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Roboto";
+  margin-top: 10px;
+}
+
+.popup {
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  top: -100%;
+  right: 0;
+  left: 50%;
+  width: 260px;
+  height: 350px;
+  position: fixed;
+  background: #fefefe;
+  padding: 26px;
+  border-radius: 10px;
+  font-family: "Roboto";
 }
 @media screen and (min-width: 768px) {
-  .button-reserve {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .popup {
+    width: 474px;
+    height: 400px;
   }
 }
-@media screen and (min-width: 1025px) {
-  .button-reserve {
-    margin-left: 0;
-    margin-right: 0;
-    display: inline-block;
-    height: 40px;
-    padding: 0;
+@media screen and (min-width: 1024px) {
+  .popup {
+    width: 574px;
+    height: 400px;
   }
+}
+.popup img {
+  width: 100px;
+  height: 100px;
+}
+
+.overlay:target + .popup {
+  transform: translate(-50%, 0);
+  display: flex;
+  top: 20%;
+}
+
+body:not(.popup) .overlay:target {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.close {
+  width: 198px;
+  height: 42px;
+  background-color: #f60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 10px;
 }
 
 .footer {
@@ -819,11 +869,11 @@ input[type=checkbox]:checked ~ .menu {
 .our-team .our-team-item h3:nth-child(3) {
   font-size: 13px;
 }
-.our-team .our-team-item button {
+.our-team .our-team-item a {
+  display: inline-block;
   font-size: 15px;
-  padding: 10px;
+  padding: 0px 10px;
   background-color: #ff6600;
-  border: 1px solid #ff6600;
   border-radius: 10px;
   color: #fff;
   transition-property: box-shadow;
@@ -831,6 +881,6 @@ input[type=checkbox]:checked ~ .menu {
   transition-timing-function: linear;
   transition-delay: 0;
 }
-.our-team .our-team-item button:hover {
+.our-team .our-team-item a:hover {
   box-shadow: 0 5px 15px 5px #000000;
 }/*# sourceMappingURL=main.css.map */
