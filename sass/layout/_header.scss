@@ -28,6 +28,9 @@
         color: $text-color;
         font-family: "Roboto";
         font-size: 15px;
+        @media screen and (max-width:767px) {
+            margin-right: 30px;
+        }
     }
 }
 
@@ -42,6 +45,7 @@
         li{
             padding-top: 10px;
             height: 35px;
+            padding-right: 10px;
         }
         box-shadow: 0 25px 25px 5px #000000;
         display: none;
@@ -49,7 +53,7 @@
         background-color: $color-secondary;
         right: 0;
         left: 0;
-        top: 85px;
+        top: 67.5px;
         text-align: center;
     }
 }
@@ -60,7 +64,6 @@ input[type=checkbox] {
 .hamburger {
     display: none;
     font-size: 34px;
-    // user-select: none;
     @media screen and (max-width:767px) {
         display: block;
     }
@@ -69,3 +72,4 @@ input[type=checkbox] {
 input[type=checkbox]:checked~.menu {
     display: block;
 }
+

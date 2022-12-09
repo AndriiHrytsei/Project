@@ -61,11 +61,11 @@
                 font-size: 13px;
             }
         }
-        button{
+        a{
+            display: inline-block;
             font-size: 15px;
-            padding: 10px;
+            padding: 0px 10px;
             background-color: $button-color;
-            border: 1px solid $button-color;
             border-radius: 10px;
             color: $text-color;
             transition-property: box-shadow;
