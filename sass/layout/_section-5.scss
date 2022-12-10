@@ -73,16 +73,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 .reservenow {
     display: inline-block;
     background-color: #f60;
@@ -132,10 +122,6 @@
     transform: translate(-50%, 0);
     display: flex;
     top: 20%;
-}
-
-body:not(.popup) .overlay:target{
-    backdrop-filter: blur(10px);
 }
 
 .close {

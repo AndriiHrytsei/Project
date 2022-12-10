@@ -628,11 +628,6 @@ input[type=checkbox]:checked ~ .menu {
   top: 20%;
 }
 
-body:not(.popup) .overlay:target {
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-}
-
 .close {
   width: 198px;
   height: 42px;
