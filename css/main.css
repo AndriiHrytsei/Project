@@ -72,23 +72,53 @@ a {
   }
 }
 
-.nav-links a {
-  transition-property: color;
-  transition-duration: 300ms;
-  transition-timing-function: linear;
+.menu-link {
+  transition: color 150ms ease-out;
   transition-delay: 0;
   color: #fff;
   font-family: "Roboto";
   font-size: 15px;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
-  .nav-links a {
+  .menu-link {
     margin-right: 30px;
   }
 }
-
-.menu li:hover a {
+.menu-link:focus {
   color: #ff6600;
+}
+@media screen and (min-width: 1024px) {
+  .menu-link::before {
+    content: "";
+    position: absolute;
+    top: 49px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff6600;
+    width: inherit;
+    height: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 150ms ease-out;
+    visibility: hidden;
+    transform: scaleY(0);
+  }
+  .menu-link:hover {
+    color: #ff6600;
+  }
+  .menu-link:hover::before {
+    visibility: visible;
+    transform: scaleY(1);
+  }
+  .menu-link:focus {
+    color: #ff6600;
+  }
+  .menu-link:focus::before {
+    visibility: visible;
+    transform: scaleY(1);
+  }
 }
 
 .menu {
