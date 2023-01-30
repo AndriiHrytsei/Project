@@ -39,16 +39,18 @@
         line-height: 40px;
         color: $text-color;
         font-family: "Roboto";
-        transition-property: box-shadow;
+        transition-property: all;
         transition-duration: 300ms;
         transition-timing-function: linear;
         transition-delay: 0;
         
         &:hover{
             box-shadow: 0 10px 15px 5px #000000;
+            transform: translateY(-3px);
         }
         &:active{
             box-shadow: 0 10px 15px 5px #000000;
+            transform: translateY(-3px);
         }
         img{
             width: 100%;
@@ -68,11 +70,12 @@
             background-color: $button-color;
             border-radius: 10px;
             color: $text-color;
-            transition-property: box-shadow;
+            transition-property: all;
             transition-duration: 300ms;
             transition-timing-function: linear;
             transition-delay: 0;
             &:hover{
+                transform: translateY(-3px);
                 box-shadow: 0 5px 15px 5px #000000;
             }
         }

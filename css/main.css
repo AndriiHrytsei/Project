@@ -17,6 +17,10 @@ body, html {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -49,6 +53,10 @@ a {
   font-size: 9px;
   margin-top: 0;
   color: #fff;
+}
+
+header {
+  z-index: 100;
 }
 
 .navbar {
@@ -270,7 +278,7 @@ input[type=checkbox]:checked ~ .menu {
   background-image: url(../images/pexels-lisa-fotios-1279330.jpg);
   background-position: center;
   background-size: cover;
-  transition-property: box-shadow;
+  transition-property: all;
   transition-duration: 300ms;
   transition-timing-function: linear;
   transition-delay: 0;
@@ -302,9 +310,12 @@ input[type=checkbox]:checked ~ .menu {
 }
 .about-food-bg:hover, .about-us-bg:hover, .about-food-bg2:hover, .about-us-bg2:hover {
   box-shadow: 0 10px 15px 5px #000000;
+  transform: translateY(-3px);
+  z-index: 3;
 }
 .about-food-bg:active, .about-us-bg:active, .about-food-bg2:active, .about-us-bg2:active {
   box-shadow: 0 10px 15px 5px #000000;
+  transform: translateY(-3px);
 }
 
 .about-food-bg2, .about-us-bg2 {
@@ -507,13 +518,14 @@ input[type=checkbox]:checked ~ .menu {
   border-radius: 10px;
   color: #fff;
   font-family: "Roboto";
-  transition-property: box-shadow;
+  transition-property: all;
   transition-duration: 300ms;
   transition-timing-function: linear;
   transition-delay: 0;
 }
 .download a:hover {
   box-shadow: 0 5px 15px 5px #000000;
+  transform: translateY(-3px);
 }
 
 .section5 {
@@ -623,13 +635,14 @@ input[type=checkbox]:checked ~ .menu {
 }
 @media screen and (min-width: 1024px) {
   .reservenow {
-    transition-property: box-shadow;
+    transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: linear;
     transition-delay: 0;
   }
   .reservenow:hover {
     box-shadow: 0 5px 15px 5px #000000;
+    transform: translateY(-3px);
   }
 }
 
@@ -888,16 +901,18 @@ input[type=checkbox]:checked ~ .menu {
   line-height: 40px;
   color: #fff;
   font-family: "Roboto";
-  transition-property: box-shadow;
+  transition-property: all;
   transition-duration: 300ms;
   transition-timing-function: linear;
   transition-delay: 0;
 }
 .our-team .our-team-item:hover {
   box-shadow: 0 10px 15px 5px #000000;
+  transform: translateY(-3px);
 }
 .our-team .our-team-item:active {
   box-shadow: 0 10px 15px 5px #000000;
+  transform: translateY(-3px);
 }
 .our-team .our-team-item img {
   width: 100%;
@@ -915,11 +930,12 @@ input[type=checkbox]:checked ~ .menu {
   background-color: #ff6600;
   border-radius: 10px;
   color: #fff;
-  transition-property: box-shadow;
+  transition-property: all;
   transition-duration: 300ms;
   transition-timing-function: linear;
   transition-delay: 0;
 }
 .our-team .our-team-item a:hover {
+  transform: translateY(-3px);
   box-shadow: 0 5px 15px 5px #000000;
 }/*# sourceMappingURL=main.css.map */

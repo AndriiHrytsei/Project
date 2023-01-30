@@ -53,7 +53,7 @@
     background-image: url(../images/pexels-lisa-fotios-1279330.jpg);
     background-position: center;
     background-size: cover;
-    transition-property: box-shadow;
+    transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: linear;
     transition-delay: 0;
@@ -76,9 +76,12 @@
     }
     &:hover{
         box-shadow: 0 10px 15px 5px #000000;
+        transform: translateY(-3px);
+        z-index: 3;
     }
     &:active{
         box-shadow: 0 10px 15px 5px #000000;
+        transform: translateY(-3px);
     }
     
 }
